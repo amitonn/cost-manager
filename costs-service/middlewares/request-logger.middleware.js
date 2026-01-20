@@ -9,7 +9,7 @@ function requestLogger(serviceName) {
             const ms = Date.now() - start;
 
             logger.info(
-                { service: serviceName, method: req.method, path: req.originalUrl, status: res.statusCode, ms: 'ms'},
+                { service: serviceName, method: req.method, path: req.originalUrl, status: res.statusCode, ms: ms },
                 'http request'
             );
 
